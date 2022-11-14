@@ -9,15 +9,28 @@ import { NavHero } from '../../hero/nav'
 import { Hero } from '../../hero'
 
 // ChakraUI and Motion
-import { Center } from '@chakra-ui/react'
+import { useScroll, useTransform, motion } from 'framer-motion'
+import { Center, CenterProps } from '@chakra-ui/react'
 
 // React
-import React from 'react'
 import { ContactMe } from '../../button-contact'
+import React from 'react'
 
 export const HomeLayout = () => {
+  const MotionCenter = motion<CenterProps>(Center)
+  const { scrollY } = useScroll()
+  const opacity = useTransform(scrollY, [0, 800], [1, 0])
+
   return (
-    <Center position="relative" as="section" id="home" bg="blue.300" w="full" h="100vh">
+    <MotionCenter
+      style={{ opacity: opacity as unknown as number }}
+      position="relative"
+      as="section"
+      id="home"
+      bg="blue.300"
+      w="full"
+      h="100vh"
+    >
       <CircleBlue />
       <CircleOrange />
       <CircleYellow />
@@ -27,6 +40,6 @@ export const HomeLayout = () => {
         <NavHero />
         <ContactMe absolute />
       </ContainerHome>
-    </Center>
+    </MotionCenter>
   )
 }

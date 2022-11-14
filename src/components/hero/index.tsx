@@ -27,7 +27,7 @@ export const Hero = () => {
           transition="all 400ms ease-in"
           cursor="pointer"
           _hover={{
-            transform: 'translateX(40px) translateY(-20px)'
+            transform: 'translateX(80px) translateY(-20px)'
           }}
         >
           Hi! I'm{' '}
@@ -45,7 +45,7 @@ export const Hero = () => {
         w={{ md: '400px', base: '3xl' }}
         shadow="lg"
       >
-        <Image src="/images/avatar2.png" alt="avatar 2" width={400} height={400} style={{ borderRadius: '30%' }} />
+        <Image src="/images/avatar1.png" alt="avatar 1" width={400} height={400} style={{ borderRadius: '30%' }} />
       </MotionCenter>
 
       <MotionCenter display={{ md: 'flex', base: 'none' }} variants={animateChild3}>
@@ -57,12 +57,12 @@ export const Hero = () => {
           transition="all 400ms ease-in"
           cursor="pointer"
           _hover={{
-            transform: 'translateX(-40px) translateY(20px)'
+            transform: 'translateX(-120px) translateY(50px)'
           }}
         >
           <HighTitle text="Frontend" query="Front" color="blue.700" />
           <Box>
-            <HighTitle text="Developer" query="Dev" color="blue.700" />
+            <HighTitle text="Developer" query="loper" color="blue.700" />
           </Box>
         </Heading>
       </MotionCenter>

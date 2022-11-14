@@ -12,7 +12,7 @@ export const animateOpenButton: Variants = {
     scaleX: 1,
     rotate: 0,
     transition: {
-      delay: 0.4
+      delay: 1.8
     }
   }
 }
