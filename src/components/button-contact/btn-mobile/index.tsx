@@ -1,25 +1,25 @@
 // Components
 import { Button, Popover, PopoverBody, PopoverContent, PopoverTrigger, VStack } from '@chakra-ui/react'
-import { animateOpenButton, MotionButton } from './animation'
+import { animateOpenButton, MotionButton } from '../animation'
 
 // Icons
 import { BsGithub, BsInstagram, BsLinkedin, BsTelegram, BsWhatsapp } from 'react-icons/bs'
-
+import { AiOutlineMessage } from 'react-icons/ai'
 // React
 import React from 'react'
-import { ContactLinks } from './links'
+import { ContactLinks } from '../links'
 
 type Props = {
   absolute?: boolean
 }
 
-export const ContactMe = ({ absolute = false }: Props) => {
+export const ContactMeMobile = ({ absolute = false }: Props) => {
   if (absolute) {
     return (
       <Popover>
         <PopoverTrigger>
           <MotionButton
-            display={{ md: 'block', base: 'none' }}
+            display={{ md: 'none', base: 'block' }}
             initial="hidden"
             animate="visible"
             variants={animateOpenButton}
@@ -27,12 +27,13 @@ export const ContactMe = ({ absolute = false }: Props) => {
             top={10}
             right={42}
             color="gray.800"
+            fontSize="md"
             bg="white"
-            h={10}
+            borderRadius="sm"
             shadow="md"
             _hover={{ bg: 'cyan.50', shadow: 'lg' }}
           >
-            Contact me
+            <AiOutlineMessage />
           </MotionButton>
         </PopoverTrigger>
         <PopoverContent
@@ -74,14 +75,15 @@ export const ContactMe = ({ absolute = false }: Props) => {
     <Popover>
       <PopoverTrigger>
         <Button
-          display={{ md: 'block', base: 'none' }}
+          display={{ md: 'none', base: 'block' }}
           color="gray.800"
           bg="white"
-          h={10}
+          fontSize="md"
+          borderRadius="sm"
           shadow="md"
           _hover={{ bg: 'cyan.50', shadow: 'lg' }}
         >
-          Contact me
+          <AiOutlineMessage />
         </Button>
       </PopoverTrigger>
       <PopoverContent

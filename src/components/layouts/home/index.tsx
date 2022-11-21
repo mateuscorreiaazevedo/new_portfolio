@@ -15,11 +15,12 @@ import { Center, CenterProps } from '@chakra-ui/react'
 // React
 import { ContactMe } from '../../button-contact'
 import React from 'react'
+import { ContactMeMobile } from '../../button-contact/btn-mobile'
 
 export const HomeLayout = () => {
   const MotionCenter = motion<CenterProps>(Center)
   const { scrollY } = useScroll()
-  const opacity = useTransform(scrollY, [0, 800], [1, 0])
+  const opacity = useTransform(scrollY, [600, 800], [1, 0])
 
   return (
     <MotionCenter
@@ -30,6 +31,7 @@ export const HomeLayout = () => {
       bg="blue.300"
       w="full"
       h="100vh"
+      zIndex="docked"
     >
       <CircleBlue />
       <CircleOrange />
@@ -39,6 +41,7 @@ export const HomeLayout = () => {
         <Hero />
         <NavHero />
         <ContactMe absolute />
+        <ContactMeMobile absolute />
       </ContainerHome>
     </MotionCenter>
   )

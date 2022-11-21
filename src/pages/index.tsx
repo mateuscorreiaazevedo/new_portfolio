@@ -1,12 +1,12 @@
 // Components
+import { AboutMeLayout } from '../components/layouts/about'
 import { HomeLayout } from '../components/layouts/home'
-
-// Style - ChakraUI
+import { Header } from '../components/header'
+import { Box } from '@chakra-ui/react'
 
 // Next & React imports
 import Head from 'next/head'
 import React from 'react'
-import { AboutMeLayout } from '../components/layouts/about'
 
 function Main() {
   return (
@@ -15,7 +15,10 @@ function Main() {
         <title>Mateus Dev | Portfólio</title>
       </Head>
       <HomeLayout />
-      <AboutMeLayout />
+      <Box position="relative" w="full">
+        <Header />
+        <AboutMeLayout />
+      </Box>
     </>
   )
 }

@@ -7,7 +7,8 @@ export const myTheme: Theme = {
       'html, body': {
         bg: '#242424',
         color: '#ffff',
-        overflowX: 'hidden'
+        overflowX: 'hidden',
+        scrollBehavior: 'smooth'
       }
     }
   },
