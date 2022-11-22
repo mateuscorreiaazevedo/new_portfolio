@@ -32,7 +32,10 @@ export const Header = () => {
           bg={blueAlpha}
           border="1px solid"
           borderColor="blue.700"
+          backdropFilter="auto"
+          backdropBlur="md"
           borderRadius="md"
+          zIndex="docked"
           px={10}
           mx={12}
           mt={2}

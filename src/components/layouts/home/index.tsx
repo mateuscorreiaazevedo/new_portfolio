@@ -31,7 +31,7 @@ export const HomeLayout = () => {
       bg="blue.300"
       w="full"
       h="100vh"
-      zIndex="docked"
+      zIndex="dropdown"
     >
       <CircleBlue />
       <CircleOrange />

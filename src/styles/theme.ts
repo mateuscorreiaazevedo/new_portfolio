@@ -8,7 +8,15 @@ export const myTheme: Theme = {
         bg: '#242424',
         color: '#ffff',
         overflowX: 'hidden',
-        scrollBehavior: 'smooth'
+        scrollBehavior: 'smooth',
+        '&::-webkit-scrollbar': {
+          w: '8px',
+          bg: 'transparent'
+        },
+        '&::-webkit-scrollbar-thumb': {
+          bg: 'orange.700',
+          borderRadius: 'md'
+        }
       }
     }
   },
