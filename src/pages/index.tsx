@@ -9,10 +9,14 @@ import Head from 'next/head'
 import React from 'react'
 import useScrollSnap from 'react-use-scroll-snap'
 import { GetStaticProps } from 'next'
+import { SkillsLayout } from '../components/layouts/skills'
 
-function Main({ test }) {
+import axios from 'axios'
+
+function Main() {
   const ref = React.useRef(null)
   useScrollSnap({ ref, duration: 5, delay: 0 })
+
   return (
     <>
       <Head>
@@ -22,6 +26,7 @@ function Main({ test }) {
         <HomeLayout />
         <Header />
         <AboutMeLayout />
+        <SkillsLayout />
       </Box>
     </>
   )
