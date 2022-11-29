@@ -8,9 +8,9 @@ import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import React from 'react'
 import useScrollSnap from 'react-use-scroll-snap'
-import { SkillsLayout } from '../components/layouts/skills'
+import { GetStaticProps } from 'next'
 
-function Main() {
+function Main({ test }) {
   const ref = React.useRef(null)
   useScrollSnap({ ref, duration: 5, delay: 0 })
   return (
@@ -22,10 +22,15 @@ function Main() {
         <HomeLayout />
         <Header />
         <AboutMeLayout />
-        <SkillsLayout />
       </Box>
     </>
   )
 }
 
 export default Main
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {}
+  }
+}

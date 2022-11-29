@@ -10,7 +10,7 @@ export const animateImage: Variants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.5,
+      delay: 1,
       duration: 1.2
     }
   }
