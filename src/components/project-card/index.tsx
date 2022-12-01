@@ -9,7 +9,7 @@ import { ProjectProps } from '../../types/projects'
 export const ProjectCard = (props: ProjectProps) => {
   const { description, image, namedImage, link, name } = props
   return (
-    <Box position="relative" width="full" h="full" zIndex="base">
+    <Box position="relative" width="full" h="full" zIndex="-2">
       <Image
         style={{ borderRadius: '20px', margin: '0 auto', zIndex: '0' }}
         src={image}

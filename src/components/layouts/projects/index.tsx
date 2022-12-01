@@ -1,6 +1,6 @@
 import { HighTitle } from '../../highlight-title'
 import { ProjectCard } from '../../project-card'
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, Grid, Heading } from '@chakra-ui/react'
 import React from 'react'
 
 // Slick-carousel
@@ -10,6 +10,7 @@ import Slider from 'react-slick'
 
 // Types
 import { ProjectProps } from '../../../types/projects'
+import Image from 'next/image'
 
 type Props = {
   projects: ProjectProps[]
@@ -17,7 +18,7 @@ type Props = {
 
 export const ProjectLayout = ({ projects }: Props) => {
   const config = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -29,7 +30,7 @@ export const ProjectLayout = ({ projects }: Props) => {
       <Heading ml="20" fontSize="2xl" fontWeight="normal">
         <HighTitle query="P" text="Projects" />
       </Heading>
-      <Box maxW="1040px" my={28} mx={{ md: 40, base: 6 }}>
+      <Box maxW="1040px" my={24} mx={{ md: 40, base: 6 }} position="relative" zIndex="-1">
         <Slider {...config}>
           {projects.map((project: ProjectProps, key: React.Key) => (
             <ProjectCard {...project} key={key} />

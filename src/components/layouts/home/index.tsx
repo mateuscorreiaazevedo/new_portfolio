@@ -20,7 +20,7 @@ import { ContactMeMobile } from '../../button-contact/btn-mobile'
 export const HomeLayout = () => {
   const MotionCenter = motion<CenterProps>(Center)
   const { scrollY } = useScroll()
-  const opacity = useTransform(scrollY, [600, 800], [1, 0])
+  const opacity = useTransform(scrollY, [600, 700], [1, 0])
 
   return (
     <MotionCenter

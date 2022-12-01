@@ -30,7 +30,7 @@ export const SkillCard = (props: SkillProps) => {
       >
         <Spacer />
         <Center>
-          <Image src={image} alt={name} width={80} height={80} style={{ borderRadius }} />
+          <Image src={image} alt={name} width={80} height={80} style={{ borderRadius, width: '40%' }} />
         </Center>
         <Spacer />
         <Text>{name}</Text>

@@ -17,13 +17,13 @@ export const SkillsLayout = ({ skills }: Props) => {
       viewport={{ once: true, amount: 0.4 }}
       as="section"
       id="skills"
-      minH="100vh"
+      minH="110vh"
       pt="100px"
       maxW="1340px"
       mx="auto"
       transformOrigin="0%"
     >
-      <Box mx={20} mt={20} maxW="1340px">
+      <Box mx={20} maxW="1340px">
         <MotionHeading
           textAlign={{ md: 'start', base: 'center' }}
           variants={animationHeading}

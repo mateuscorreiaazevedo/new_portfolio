@@ -36,7 +36,7 @@ function Main({ skills, projects }: Props) {
       <Head>
         <title>Mateus Dev | Portfólio</title>
       </Head>
-      <Box w="full" minH="full" ref={ref} overflowY="hidden" position="relative" zIndex="base">
+      <Box w="full" minH="full" ref={ref} overflowY="hidden" overflowX="hidden" position="relative" zIndex="base">
         <HomeLayout />
         <Header />
         <AboutMeLayout />

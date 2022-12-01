@@ -1,5 +1,4 @@
-import { Button, Center, CenterProps, Flex, HStack, Spacer, theme, useDisclosure } from '@chakra-ui/react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { Button, Center, Flex, HStack, Spacer, theme, useDisclosure } from '@chakra-ui/react'
 import { transparentize } from 'polished'
 import React from 'react'
 import { ContactMe } from '../button-contact'
@@ -10,20 +9,11 @@ import { ContactMeMobile } from '../button-contact/btn-mobile'
 
 export const Header = () => {
   const blueAlpha = transparentize(0.5, theme.colors.blue[300])
-  const MotionCenter = motion<CenterProps>(Center)
-  const { scrollY } = useScroll()
-  const opacity = useTransform(scrollY, [650, 850], [0, 1])
   const { isOpen, onOpen, onClose } = useDisclosure()
   const ref = React.useRef()
   return (
     <>
-      <MotionCenter
-        display={{ md: 'flex', base: 'none' }}
-        w="full"
-        position="fixed"
-        top={0}
-        style={{ opacity: opacity as unknown as number }}
-      >
+      <Center display={{ md: 'flex', base: 'none' }} w="full" position="fixed" top={0}>
         <Flex
           as="header"
           w="full"
@@ -51,14 +41,8 @@ export const Header = () => {
             <ContactMe />
           </Center>
         </Flex>
-      </MotionCenter>
-      <MotionCenter
-        style={{ opacity: opacity as unknown as number }}
-        position="fixed"
-        top={0}
-        w="full"
-        display={{ md: 'none', base: 'flex' }}
-      >
+      </Center>
+      <Center position="fixed" top={0} w="full" display={{ md: 'none', base: 'flex' }}>
         <Flex
           as="header"
           w="full"
@@ -86,7 +70,7 @@ export const Header = () => {
             <ContactMeMobile />
           </Center>
         </Flex>
-      </MotionCenter>
+      </Center>
     </>
   )
 }
