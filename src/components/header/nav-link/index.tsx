@@ -26,7 +26,7 @@ export const NavLink = ({ link, text, onCloseMobile }: Props) => {
       {text}
       <Box
         className="line"
-        transition="width 400ms ease-in"
+        transition="width 400ms ease-out"
         h="3px"
         borderRadius="sm"
         w="0"
