@@ -35,7 +35,7 @@ export const Header = () => {
           backdropFilter="auto"
           backdropBlur="md"
           borderRadius="md"
-          zIndex="docked"
+          zIndex="dropdown"
           px={10}
           mx={12}
           mt={2}
@@ -70,6 +70,9 @@ export const Header = () => {
           borderRadius="sm"
           border="1px solid"
           borderColor="blue.700"
+          zIndex="dropdown"
+          backdropFilter="auto"
+          backdropBlur="md"
         >
           <Center>
             <Button ref={ref} onClick={onOpen} bg="white" color="gray.800" fontSize="md" borderRadius="sm">
