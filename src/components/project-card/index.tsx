@@ -35,9 +35,12 @@ export const ProjectCard = (props: ProjectProps) => {
             opacity: 1
           }}
         >
-          <Heading>{name}</Heading>
-          <Text fontSize={{ md: 'md', base: 'sm' }}>{description}</Text>
+          <Heading fontSize={{ md: '2xl', base: 'md' }}>{name}</Heading>
+          <Text fontSize={{ md: 'md', base: 'sm' }} textAlign={{ md: 'start', base: 'center' }}>
+            {description}
+          </Text>
           <Link
+            mt={{ md: 0, base: '2' }}
             position="relative"
             transition="all 300ms ease-in"
             href={link}

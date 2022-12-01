@@ -32,5 +32,5 @@ export const animationHeading: Variants = {
 }
 
 export const MotionHeading = motion<HeadingProps>(Heading)
-export const MotionGrid = motion<FlexProps>(Flex)
+export const MotionGrid = motion<GridProps>(Grid)
 export const MotionBox = motion<BoxProps>(Box)
