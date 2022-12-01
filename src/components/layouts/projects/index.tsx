@@ -29,7 +29,7 @@ export const ProjectLayout = ({ projects }: Props) => {
       <Heading ml="20" fontSize="2xl" fontWeight="normal">
         <HighTitle query="P" text="Projects" />
       </Heading>
-      <Box maxW="1040px" my="28" mx={{ md: 40, base: 10 }}>
+      <Box maxW="1040px" my={28} mx={{ md: 40, base: 6 }}>
         <Slider {...config}>
           {projects.map((project: ProjectProps, key: React.Key) => (
             <ProjectCard {...project} key={key} />

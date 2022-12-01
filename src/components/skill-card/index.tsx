@@ -14,8 +14,8 @@ export const SkillCard = (props: SkillProps) => {
   return (
     <Tooltip closeDelay={400} label={`${level}%`} hasArrow bg="blue.300" color="white">
       <MotionCard
-        w={40}
-        h={32}
+        maxW={40}
+        maxH={32}
         variants={animate}
         transitionDuration="300ms"
         flexDirection="column"
