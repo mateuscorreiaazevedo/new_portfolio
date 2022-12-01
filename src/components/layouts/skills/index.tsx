@@ -36,7 +36,7 @@ export const SkillsLayout = ({ skills }: Props) => {
           <MotionGrid
             variants={animationContainer}
             gap={{ md: 10, base: 1 }}
-            templateColumns={{ md: 'repeat(5, 1fr)', base: 'repeat(2, 1fr)' }}
+            templateColumns={{ md: 'repeat(4, 1fr)', base: 'repeat(2, 1fr)' }}
           >
             {skills.map((skill: SkillProps, key: React.Key) => (
               <SkillCard {...skill} key={key} />
