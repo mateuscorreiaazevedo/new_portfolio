@@ -92,6 +92,7 @@ export const ContactMe = ({ absolute = false }: Props) => {
         color="gray.800"
         border="none"
         borderRadius="sm"
+        zIndex="banner"
       >
         <PopoverBody>
           <VStack>
