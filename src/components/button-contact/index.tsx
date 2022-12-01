@@ -30,20 +30,13 @@ export const ContactMe = ({ absolute = false }: Props) => {
             bg="white"
             h={10}
             shadow="md"
+            borderRadius="sm"
             _hover={{ bg: 'cyan.50', shadow: 'lg' }}
           >
             Contact me
           </MotionButton>
         </PopoverTrigger>
-        <PopoverContent
-          bg="whiteAlpha.700"
-          backdropFilter="auto"
-          backdropBlur="lg"
-          right={{ md: 24, base: 5 }}
-          color="gray.800"
-          border="none"
-          borderRadius="sm"
-        >
+        <PopoverContent bg="white" right={{ md: 24, base: 5 }} color="gray.800" border="none" borderRadius="sm">
           <PopoverBody>
             <VStack>
               <ContactLinks href="https://github.com/mateuscorreiaazevedo">
@@ -79,15 +72,14 @@ export const ContactMe = ({ absolute = false }: Props) => {
           bg="white"
           h={10}
           shadow="md"
+          borderRadius="sm"
           _hover={{ bg: 'cyan.50', shadow: 'lg' }}
         >
           Contact me
         </Button>
       </PopoverTrigger>
       <PopoverContent
-        bg="whiteAlpha.700"
-        backdropFilter="auto"
-        backdropBlur="lg"
+        bg="white"
         right={{ md: 24, base: 5 }}
         color="gray.800"
         border="none"

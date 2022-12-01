@@ -9,14 +9,8 @@ import { ProjectProps } from '../../types/projects'
 export const ProjectCard = (props: ProjectProps) => {
   const { description, image, namedImage, link, name } = props
   return (
-    <Box position="relative" width="full" h="full" zIndex="-2">
-      <Image
-        style={{ borderRadius: '20px', margin: '0 auto', zIndex: '0' }}
-        src={image}
-        alt={namedImage}
-        width={600}
-        height={600}
-      />
+    <Box position="relative" width="full" h="full" px={2}>
+      <Image style={{ borderRadius: '20px', margin: '0 auto' }} src={image} alt={namedImage} width={600} height={600} />
       <Center position="absolute" inset={0} zIndex="base">
         <VStack
           spacing={{ md: 8 }}

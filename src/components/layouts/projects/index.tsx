@@ -26,11 +26,11 @@ export const ProjectLayout = ({ projects }: Props) => {
   }
 
   return (
-    <Box as="section" id="projects" maxW="1340px" mx="auto" minH="100vh" pt="100px">
+    <Box as="section" id="projects" maxW="1340px" mx="auto" h="100vh" pt="100px">
       <Heading ml="20" fontSize="2xl" fontWeight="normal">
         <HighTitle query="P" text="Projects" />
       </Heading>
-      <Box maxW="1040px" my={24} mx={{ md: 40, base: 6 }} position="relative" zIndex="-1">
+      <Box maxW="1040px" mt={{ md: 6, base: 32 }} mx={{ md: 40, base: 6 }}>
         <Slider {...config}>
           {projects.map((project: ProjectProps, key: React.Key) => (
             <ProjectCard {...project} key={key} />

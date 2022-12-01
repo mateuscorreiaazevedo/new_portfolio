@@ -13,7 +13,7 @@ export const Header = () => {
   const ref = React.useRef()
   return (
     <>
-      <Center display={{ md: 'flex', base: 'none' }} w="full" position="fixed" top={0}>
+      <Center display={{ md: 'flex', base: 'none' }} w="full" position="fixed" zIndex="docked" top={0}>
         <Flex
           as="header"
           w="full"
@@ -25,7 +25,6 @@ export const Header = () => {
           backdropFilter="auto"
           backdropBlur="md"
           borderRadius="md"
-          zIndex="dropdown"
           px={10}
           mx={12}
           mt={2}
