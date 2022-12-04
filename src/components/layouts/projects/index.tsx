@@ -26,7 +26,7 @@ export const ProjectLayout = ({ projects }: Props) => {
   }
 
   return (
-    <Box as="section" id="projects" maxW="1340px" mx="auto" h="100vh" pt="100px">
+    <Box as="section" id="projects" maxW="1340px" mx="auto" minH="100vh" pt="100px">
       <Heading ml="20" fontSize="2xl" fontWeight="normal">
         <HighTitle query="P" text="Projects" />
       </Heading>
