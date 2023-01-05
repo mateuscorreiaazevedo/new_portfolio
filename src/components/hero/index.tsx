@@ -30,7 +30,7 @@ export const Hero = () => {
             transform: 'translateX(80px) translateY(-20px)'
           }}
         >
-          Hi! I'm{' '}
+          Hi! I&apos;m{' '}
           <Text color="blue.700" fontWeight="bold">
             Mateus Azevedo!
           </Text>

@@ -1,7 +1,7 @@
 import { supabase } from '../pages/api/supabase'
 
 export namespace SkillService {
-  export async function getAll() {
+  export async function getAll () {
     const { data, error, status } = await supabase.from('skills').select('*')
 
     switch (status) {

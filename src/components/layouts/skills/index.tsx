@@ -1,5 +1,5 @@
 import { animationContainer, animationHeading, MotionBox, MotionGrid, MotionHeading } from './animation'
-import { Box, Center, Flex } from '@chakra-ui/react'
+import { Box, Center } from '@chakra-ui/react'
 import { SkillProps } from '../../../types/skills'
 import { HighTitle } from '../../highlight-title'
 import { SkillCard } from '../../skill-card'
