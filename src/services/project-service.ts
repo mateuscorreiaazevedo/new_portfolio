@@ -8,7 +8,7 @@ type Props = {
 }
 
 export namespace ProjectService {
-  export async function getAll() {
+  export async function getAll () {
     const { data: projects, error, status }: Props = await supabase.from('projects').select('*')
 
     projects.forEach(async (project: ProjectProps) => {
@@ -21,7 +21,6 @@ export namespace ProjectService {
     switch (status) {
       case 200:
         return projects
-        return
       case 400:
         throw new Error(error)
       default:

@@ -1,4 +1,4 @@
-import { Highlight, HighlightProps } from '@chakra-ui/react'
+import { Highlight } from '@chakra-ui/react'
 import React from 'react'
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 export const HighTitle: React.FC<Props> = ({ query, color = 'pink.700', text }) => {
   return (
-    <Highlight query={query} styles={{ fontWeight: 'bold', color: color, width: '306px' }}>
+    <Highlight query={query} styles={{ fontWeight: 'bold', color, width: '306px' }}>
       {text}
     </Highlight>
   )

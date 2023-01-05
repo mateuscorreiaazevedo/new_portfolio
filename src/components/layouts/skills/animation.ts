@@ -1,4 +1,4 @@
-import { Box, BoxProps, Flex, FlexProps, Grid, GridProps, Heading, HeadingProps } from '@chakra-ui/react'
+import { Box, BoxProps, Grid, GridProps, Heading, HeadingProps } from '@chakra-ui/react'
 import { motion, Variants } from 'framer-motion'
 
 export const animationContainer: Variants = {

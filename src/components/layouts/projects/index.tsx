@@ -1,6 +1,6 @@
 import { HighTitle } from '../../highlight-title'
 import { ProjectCard } from '../../project-card'
-import { Box, Grid, Heading } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
 
 // Slick-carousel
@@ -10,7 +10,6 @@ import Slider from 'react-slick'
 
 // Types
 import { ProjectProps } from '../../../types/projects'
-import Image from 'next/image'
 
 type Props = {
   projects: ProjectProps[]
