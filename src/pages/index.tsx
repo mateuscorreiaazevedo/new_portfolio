@@ -27,7 +27,7 @@ type Props = {
   projects: ProjectProps[]
 }
 
-function Main({ skills, projects }: Props) {
+function Main ({ skills, projects }: Props) {
   const ref = React.useRef(null)
   useScrollSnap({ ref, duration: 5, delay: 0 })
 
